@@ -1,7 +1,8 @@
 JS PROJECT: HOW TO
 
-User can select a way(colored) to travel to finial destination
-Route will color and move along route once selected
+User can select a way(colored) to travel to destination
+A user should be able to selectw which way (route) they want to reach destination
+Once selected the way(route) will color fill the pattern until the end
 
 JS Project- Backend
 
