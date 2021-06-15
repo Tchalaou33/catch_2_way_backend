@@ -8,6 +8,13 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :api do
+    namespace :v1 do
+      resources :destinations, only: [:index, :create]
+
+    end
+  end
+
 end
 
 
