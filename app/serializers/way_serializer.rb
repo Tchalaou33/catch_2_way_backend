@@ -1,4 +1,5 @@
 class WaySerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :color, :description, :destination_id, :destination
+  # belongs_to :destination
 end

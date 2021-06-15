@@ -1,4 +1,4 @@
 class DestinationSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :name
 end
