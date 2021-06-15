@@ -1,8 +1,39 @@
 JS PROJECT: HOW TO
 
-
+User can select a way(colored) to travel to finial destination
+Route will color and move along route once selected
 
 JS Project- Backend
+
+
+
+MODELS 
+Way
+    color
+    description
+    destination_id
+
+Destination
+    name
+
+ASSOCIATIONS
+Way
+belongs_to :destination
+
+Destination
+has_many :way
+
+STRETCH GOALS 
+Authentication + Authorization
+User
+    name
+    email
+    password_digets
+    past destinations
+
+User can change destination
+User can see way_pionts along the route (Feature)
+
 
 
 
