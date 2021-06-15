@@ -26,6 +26,7 @@ has_many :way
 
 QUESTIONS
 1. Why should we do our migraiotns in our respective branches?
+ - once create branch rake db:migrate before merge in git hub. keeps master clean and free of possilb errors
 2. what is the 'belongs_to' attribute in migrations https://guides.rudyonrails.org/association_basics.html#the-belongs-to-association] doing for us? What's best practive?
 
 
