@@ -2,7 +2,13 @@ class Api::V1::WaysController < ApplicationController
 
     def index
         ways = Way.all
-        render json: ways
+        # options = {
+        #     # include assocations destination
+        #     include: [:destination]
+        # }
+        # render json: ways
+        render json: WaySerializer.new(ways)
+        # render json: WaySerializer.new(ways, options)
     end
 
     def create

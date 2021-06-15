@@ -1,3 +1,3 @@
 class Destination < ApplicationRecord
-     has_many :ways
+     has_many :Ways
 end
