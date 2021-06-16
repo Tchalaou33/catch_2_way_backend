@@ -3,7 +3,7 @@ class Api::V1::DestinationsController < ApplicationController
     def index
         destinations = Destination.all
         # render json: destinations
-        render json: DestinationSerializer.new(ways)
+        render json: DestinationSerializer.new(destinations)
     end
 
     def create 
