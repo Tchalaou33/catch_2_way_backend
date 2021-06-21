@@ -8,3 +8,11 @@
 
 Destination.destroy_all
 Way.destroy_all
+
+starbucks = Destination.create(name: "StarBucks")
+mall = Destination.create(name: "Mall")
+dsw = Destination.create(name: "DSW")
+
+Way.create(color: "Blue", description: "This route will at StarBucks. ", destination_id: starbucks.id)
+
+
