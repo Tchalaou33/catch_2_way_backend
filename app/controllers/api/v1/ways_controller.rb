@@ -12,9 +12,9 @@ class Api::V1::WaysController < ApplicationController
     end
 
     def create
-        way = Ways.new(way_params)
+        way = Way.new(way_params)
         if way.save
-            render json: way, status: :accepted
+            render json: WaySerializer.new(way), status: :accepted
         else
             render json: {errors: way.errors.full_messages}, Status: :unprocessible_entity
 
