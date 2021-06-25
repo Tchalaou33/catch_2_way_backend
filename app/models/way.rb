@@ -1,3 +1,3 @@
 class Way < ApplicationRecord
-    belongs_to :Destination
+    belongs_to :destination
 end

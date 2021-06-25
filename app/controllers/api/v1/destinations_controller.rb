@@ -6,6 +6,8 @@ class Api::V1::DestinationsController < ApplicationController
         render json: DestinationSerializer.new(destinations)
     end
 
+    # DON'T NEED WHEN REFACTOR
+
     def create 
         destination.new(destination_params)
         if destination.save
