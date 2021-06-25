@@ -24,7 +24,7 @@ class Api::V1::WaysController < ApplicationController
     def destroy
         way = Way.find_by_id(params[:id])
         way.destroy
-        render json {message: "#{way.color} was successfully deleted"}
+        render json: {message: "#{way.color} was successfully deleted"}
     end
 
     private

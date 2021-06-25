@@ -3,18 +3,11 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :ways, only: [:index, :create]
+      resources :ways
+      resources :destinations
 
     end
   end
-
-  namespace :api do
-    namespace :v1 do
-      resources :destinations, only: [:index, :create]
-
-    end
-  end
-
 end
 
 
